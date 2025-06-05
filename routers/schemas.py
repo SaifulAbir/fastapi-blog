@@ -15,5 +15,5 @@ class PostDisplay(BaseModel):
   creator: str
   timestamp: datetime
 
-  class Config():
-      orm_mode = True
+  class Config:
+      from_attributes = True
